@@ -104,12 +104,12 @@ class QRCodeIntent
       
     end
     
-    @to_s = "WIFI:S%s;T:%s;P:%s;;" % [h[:ssid], h[:type], h[:password]]
+    @to_s = "WIFI:S:%s;T:%s;P:%s;;" % [h[:ssid], h[:type], h[:password]]
     
   end
   
   def to_svg()
-    RQRCode::QRCode.new(@to_s).as_svg
+    RQRCode::QRCode.new(@to_s).as_svg viewbox: true
   end
   
 end

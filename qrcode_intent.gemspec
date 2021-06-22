@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'qrcode_intent'
-  s.version = '0.1.0'
+  s.version = '0.1.1'
   s.summary = 'An rqrcode wrapper for adding a website, a contact, ' + 
       'wi-fi settings, location, or event.'
   s.authors = ['James Robertson']
